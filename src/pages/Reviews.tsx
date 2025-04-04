@@ -1,8 +1,8 @@
 export default function Reviews() {
     return (
         <>
-            <div>
-                <h1>Reviews Page!</h1>
+            <div className="d-flex align-items-center justify-content-center mt-5 mb-3">
+                <h1>Reviews</h1>
             </div>
         </>
     )
