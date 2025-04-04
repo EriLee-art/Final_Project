@@ -1,10 +1,6 @@
 export default function HomePage() {
     return (
         <>
-            <div className="d-flex text-center align-items-center justify-content-center fs-1 mt-5 mb-3">
-                <h1>Orange Reviews</h1>
-            </div>
-
             <div>
                 <div className="d-flex align-items-center justify-content-center">
                     <h2 className="text-center mt-5">Home to a variety of game reviews!</h2>
