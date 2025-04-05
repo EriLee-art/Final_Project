@@ -1,4 +1,7 @@
 export default function HomePage() {
+    /**
+     * The same as my Week 2 Assignment, just prettied up with Bootstrap
+     */
     return (
         <>
             <div>

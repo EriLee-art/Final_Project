@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage'
 import About from './pages/About'
 import Reviews from './pages/Reviews'
 
+// Routes between all the different pages, Home Page, About, and Reviews
 const router = createBrowserRouter([
   {
     path: "/",

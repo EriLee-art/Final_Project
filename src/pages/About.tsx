@@ -1,4 +1,8 @@
 export default function About() {
+    /**
+     * Same thing as the Home Page, taken from my Week 2 code and
+     *  prettied up with Bootstrap
+     */
     return (
         <>
             <header className="d-flex align-items-center justify-content-center mt-5 mb-3">

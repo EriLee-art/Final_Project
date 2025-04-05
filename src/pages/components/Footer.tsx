@@ -1,7 +1,10 @@
 export default function Footer() {
     return (
         <>
-            
+            {/** 
+             * Same as Week 2, just prettied up and separated from Root.tsx for
+             * easier editing
+             */}
             <hr className="mb-0 mt-5"/>
             
             <footer className="d-flex flex-column align-items-center">
