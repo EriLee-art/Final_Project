@@ -3,9 +3,10 @@ import { Button, Form } from "react-bootstrap";
 
 type Props = {
     addComment: (textValue: string) => void
+    isPosting: boolean
 }
 
-export default function CommentForm({ addComment }: Props ) {
+export default function CommentForm({ addComment, isPosting }: Props ) {
 
     // State for currently inputted values from the form to be handled by handleSubmit
     const [inputValue, setInputValue] = useState({
@@ -40,12 +41,13 @@ export default function CommentForm({ addComment }: Props ) {
                     <Form.Label>Comment</Form.Label>
                     <Form.Control
                         type="text"
+                        disabled={isPosting}
                         placeholder="Comment"
                         onChange={handleChange}
                         value={inputValue.text}
                     />
                 </Form.Group>
-                <Button variant="primary" type="submit" onClick={handleSubmit}>
+                <Button variant="primary" type="submit" disabled={isPosting} onClick={handleSubmit}>
                     Submit
                 </Button>
             </Form>

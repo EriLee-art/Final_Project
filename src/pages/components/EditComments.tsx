@@ -7,9 +7,11 @@ type Props = {
         id: number
         text: string
     }
+    isPutting: boolean
+    isDeleting: boolean
 }
 
-export default function EditComments({editComment, comment} : Props) {
+export default function EditComments({editComment, comment, isPutting, isDeleting} : Props) {
 
     const [show, setShow] = useState(false);
     
@@ -38,7 +40,7 @@ export default function EditComments({editComment, comment} : Props) {
 
     return (
         <>
-            <Button variant="success" onClick={handleShow}>
+            <Button variant="success" disabled={isDeleting} onClick={handleShow}>
                 Edit
             </Button>
 
@@ -56,12 +58,13 @@ export default function EditComments({editComment, comment} : Props) {
                             <Form.Label>Comment</Form.Label>
                             <Form.Control
                                 type="text"
+                                disabled={isPutting}
                                 placeholder={comment.text}
                                 onChange={handleChange}
                                 value={editValue.text}
                             />
                         </Form.Group>
-                        <Button variant="primary" type="submit" onClick={handleSubmit}>
+                        <Button variant="primary" type="submit" disabled={isPutting} onClick={handleSubmit}>
                             Submit
                         </Button>
                     </Form>
