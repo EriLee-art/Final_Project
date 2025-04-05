@@ -1,67 +1,81 @@
 {
-    "Reviews": [
-        {
-            "id": 0,
-            "name": "Metroid Dread",
-            "rank": 10,
-            "title": "Dreadfully Epic",
-            "link": "MetroidDread"
-        },
-        {
-            "id": 1,
-            "name": "Red Dead Redemption 2",
-            "rank": 9,
-            "title": "Life is A Series of Choices",
-            "link": "RedDeadRedemption2"
-        },
-        {
-            "id": 2,
-            "name": "The Last of Us: Part 2",
-            "rank": 4,
-            "title": "The Last of This Story",
-            "link": "TheLastOfUs2"
-        },
-        {
-            "id": 3,
-            "name": "Sonic The Hedgehog 2006",
-            "rank": -7,
-            "title": "Terrible Yet Hilarious",
-            "link": "Sonic2006"
-        },
-        {
-            "id": 4,
-            "name": "Stardew Valley",
-            "rank": 9,
-            "title": "Incredible With Minor Tweaks",
-            "link": "StardewValley"
-        },
-        {
-            "id": 5,
-            "name": "Warframe",
-            "rank": 9,
-            "title": "The Best F2P There Ever Lived",
-            "link": "Warframe"
-        },
-        {
-            "id": 6,
-            "name": "Doom 2016",
-            "rank": 10,
-            "title": "FPS Perfected",
-            "link": "Doom2016"
-        },
-        {
-            "id": 7,
-            "name": "Doom Eternal",
-            "rank": 10,
-            "title": "'FPS Perfected' Perfected",
-            "link": "DoomEternal"
-        },
-        {
-            "id": 8,
-            "name": "Sonic Boom",
-            "rank": 0,
-            "title": "Just Don't",
-            "link": "SonicBoom"
-        }
-    ]
+  "Reviews": [
+    {
+      "id": 0,
+      "name": "Metroid Dread",
+      "rank": 10,
+      "title": "Dreadfully Epic",
+      "reason": "The best Metroidvania game to ever exist to date."
+    },
+    {
+      "id": 1,
+      "name": "Red Dead Redemption 2",
+      "rank": 9,
+      "title": "Life is A Series of Choices",
+      "reason": "Many games barely pluck the chords that this game strikes. Although I never shed a tear, this game very well came the closest."
+    },
+    {
+      "id": 2,
+      "name": "The Last of Us: Part 2",
+      "rank": 4,
+      "title": "The Last of This Story",
+      "reason": "A story that flew too close to the sun that it failed to see what it was doing wrong to begin with."
+    },
+    {
+      "id": 3,
+      "name": "Sonic The Hedgehog 2006",
+      "rank": -7,
+      "title": "Terrible Yet Hilarious",
+      "reason": "The glitches and bugs are so horrendous, it becomes a joy to play through, incredibly."
+    },
+    {
+      "id": 4,
+      "name": "Stardew Valley",
+      "rank": 9,
+      "title": "Incredible With Minor Tweaks",
+      "reason": "I like it, but it feels incomplete without mods. I can spend a whole day playing it though."
+    },
+    {
+      "id": 5,
+      "name": "Warframe",
+      "rank": 9,
+      "title": "The Best F2P There Ever Lived",
+      "reason": "I love this game with all my heart but WHY DO WE HAVE TO WAIT SO LONG FOR THINGS TO FINISH BUILDING??"
+    },
+    {
+      "id": 6,
+      "name": "Doom 2016",
+      "rank": 10,
+      "title": "FPS Perfected",
+      "reason": "RIP AND TEAR"
+    },
+    {
+      "id": 7,
+      "name": "Doom Eternal",
+      "rank": 10,
+      "title": "'FPS Perfected' Perfected",
+      "reason": "RIP. AND. TEEEEEEAAAAAAAARRRRR!!!!"
+    },
+    {
+      "id": 8,
+      "name": "Sonic Boom",
+      "rank": 0,
+      "title": "Just Don't",
+      "reason": "Meh, it's neither hilariously bad, nor any good. Just meh."
+    }
+  ],
+  "Comments": [
+    {
+      "id": 0,
+      "text": "I agree with this statement wholeheartedly!"
+    },
+    {
+      "id": 1,
+      "text": "BEST FPS I EVER PLAYED WOOO!!"
+    },
+    {
+      "id": 2,
+      "text": "Yes it does >:3"
+    }
+  ]
 }

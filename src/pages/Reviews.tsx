@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react"
-import { Outlet } from "react-router-dom"
 import Review from "./components/Review"
-import { Button, Modal } from "react-bootstrap"
 
 type Review = {
     id: number
     name: string
     rank: number
     title: string
-    link: string
+    reason: string
 }
 
 export default function Reviews() {
@@ -37,7 +35,7 @@ export default function Reviews() {
                             <div className="card-body">
                                 <h5 className="card-title fs-3">{review.name}</h5>
                                 <p className="card-text fs-3">{review.title} ({review.rank}/10)</p>
-                                <Review />
+                                <Review name={review.name} title={review.title} rank={review.rank} reason={review.reason} />
                             </div>
                         </div>
                     )) }

@@ -1,7 +1,15 @@
 import { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
+import Comments from "./Comments";
 
-export default function Review() {
+type Props = {
+    name: string
+    title: string
+    rank: number
+    reason: string
+}
+
+export default function Review({ name, title, rank, reason } : Props) {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -13,18 +21,24 @@ export default function Review() {
                 Go To Review
             </Button>
 
-            <Modal show={show} onHide={handleClose}>
+            <Modal show={show}
+                onHide={() => setShow(false)}
+                dialogClassName="modal-90w"
+                aria-labelledby="example-custom-modal-styling-title"
+            >
                 <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
+                    <Modal.Title>{name}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+                <Modal.Body>
+                    <h2>{title} ({rank}/10)</h2>
+                    <p>{reason}</p>
+                    <h3>Comments:</h3>
+                    <Comments />
+                </Modal.Body>
                 <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Save Changes
-                </Button>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
                 </Modal.Footer>
             </Modal>
         </>
