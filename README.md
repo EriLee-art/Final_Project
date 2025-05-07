@@ -1,4 +1,4 @@
-# Final_Project
+# Review Website
 
 1) Clone the Repo
 2) Make sure to install json-server at "https://www.npmjs.com/package/json-server", globally with "npm install json-server -g"
